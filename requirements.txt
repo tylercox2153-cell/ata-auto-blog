@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+playwright
+psycopg2-binary
+sqlalchemy
+python-dotenv
