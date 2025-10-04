@@ -1,4 +1,4 @@
-from datetime import date, timedelta
+from . import data_pipeline as dp
 from pathlib import Path
 
 TEMPLATE_PATH = Path("templates/weekly_post.md")
