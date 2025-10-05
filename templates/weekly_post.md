@@ -12,5 +12,8 @@
 ## Rising Stars & Milestones
 {{milestones_block}}
 
+### All Shoots from Last Weekend
+{{last_weekend_block}}
+
 ---
 _Summarized from official ATA sources. Full details linked in each section._
