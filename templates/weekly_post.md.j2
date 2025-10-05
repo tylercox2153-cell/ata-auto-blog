@@ -1,0 +1,23 @@
+# ATA Weekly Digest
+
+**Week of {{ (shoots|first).start_date if shoots else "TBD" }}**
+
+## Highlights
+{% if leaders %}
+- **Singles:** {{ leaders.get('singles').name }} — {{ leaders.get('singles').score }}/{{ leaders.get('singles').out_of }}
+- **Handicap:** {{ leaders.get('handicap').name if leaders.get('handicap') else '—' }}{% if leaders.get('handicap') %} — {{ leaders.get('handicap').score }}/{{ leaders.get('handicap').out_of }}{% endif %}
+- **Doubles:** {{ leaders.get('doubles').name if leaders.get('doubles') else '—' }}{% if leaders.get('doubles') %} — {{ leaders.get('doubles').score }}/{{ leaders.get('doubles').out_of }}{% endif %}
+{% else %}
+_No leader data this week yet._
+{% endif %}
+
+## Shoots Covered
+{% for s in shoots %}
+- [{{ s.title }}]({{ s.url }}) — {{ s.club }}, {{ s.state }} ({{ s.start_date }} – {{ s.end_date }})
+{% else %}
+_No shoots were added. Add URLs in `cli.py`._
+{% endfor %}
+
+---
+
+*Generated automatically.*
