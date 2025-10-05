@@ -9,7 +9,8 @@ def week_bounds(d: date):
     end = start + timedelta(days=6)          # Sunday
     return start, end
 
-def build_weekly_context():
+def build_weekly_context("last_weekend_block": dp.build_last_weekend_shoots_block(),
+):
     """stub data for now—later we’ll replace with real parsed stats."""
     start, _ = week_bounds(date.today())
     return {
