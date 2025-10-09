@@ -1,0 +1,11 @@
+# Paste events you want to ingest this week.
+# You can mix sources.
+events:
+  - source: shootscoreboard
+    url: "https://shootscoreboard.com/scores.cfm?shootid=2004"
+  - source: shootscoreboard
+    url: "https://shootscoreboard.com/scores.cfm?shootid=1975"
+  - source: shootscoreboard
+    url: "https://shootscoreboard.com/scores.cfm?shootid=2005"
+  # - source: shootata
+  #   url: "https://shootata.com/SomeEventResultsPage"
